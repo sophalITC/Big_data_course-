@@ -1,0 +1,10 @@
+version: "3"
+services:
+  pyspark:
+    image: "jupyter/all-spark-notebook"
+    volumes:
+      - /Users/samlyheng/Spark:/home/jovyan/work
+      - /Users/samlyheng/Spark/logs:/home/jovyan/work/logs
+    ports:
+      - 8888:8888
+      - 4040:4040
